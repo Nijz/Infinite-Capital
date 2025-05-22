@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Font Families */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+
+  /* Font Sizes */
+  --font-heading-xl: 2.25rem;
+  --line-heading-xl: 2.75rem;
+  --track-heading-xl: -0.01em;
+
+  --font-heading-lg: 1.875rem;
+  --line-heading-lg: 2.25rem;
+  --track-heading-lg: -0.01em;
+
+  --font-heading-md: 1.5rem;
+  --line-heading-md: 2rem;
+
+  --font-heading-sm: 1.25rem;
+  --line-heading-sm: 1.75rem;
+
+  --font-heading-xs: 1.125rem;
+  --line-heading-xs: 1.5rem;
+
+  --font-body-xl: 1.25rem;
+  --line-body-xl: 1.875rem;
+
+  --font-body-lg: 1.125rem;
+  --line-body-lg: 1.75rem;
+
+  --font-body-md: 1rem;
+  --line-body-md: 1.5rem;
+
+  --font-body-sm: 0.875rem;
+  --line-body-sm: 1.25rem;
+
+  --font-body-xs: 0.75rem;
+  --line-body-xs: 1rem;
+
+  /* Color Scales */
+
+  --color-whiteScale: #F9F9F9;
+
+  /* Gray Scale */
+  --color-grayScale-100: #DEDEDE;
+  --color-grayScale-200: #B6B6B6;
+  --color-grayScale-300: #909090;
+  --color-grayScale-400: #6C6C6C;
+  --color-grayScale-500: #4A4A4A;
+  --color-grayScale-600: #2A2A2A;
+  --color-grayScale-700: #0A0A0A;
+
+  /* Blue Scale */
+  --color-blueScale-100: #CEDDFF;
+  --color-blueScale-200: #8DD6FF;
+  --color-blueScale-300: #1E90FF;
+  --color-blueScale-400: #006CC4;
+  --color-blueScale-500: #004988;
+  --color-blueScale-600: #002951;
+  --color-blueScale-700: #001128;
+
+  /* Green Scale */
+  --color-greenScale-100: #3FFA3F;
+  --color-greenScale-200: #32CD32;
+  --color-greenScale-300: #25A225;
+  --color-greenScale-400: #197919;
+  --color-greenScale-500: #0E520E;
+  --color-greenScale-600: #052E05;
+  --color-greenScale-700: #011501;
+
+  /* Dark Gray Scale */
+  --color-darkGrayScale-100: #E0E0E0;
+  --color-darkGrayScale-200: #B8B8B8;
+  --color-darkGrayScale-300: #929292;
+  --color-darkGrayScale-400: #6E6E6E;
+  --color-darkGrayScale-500: #4B4B4B;
+  --color-darkGrayScale-600: #2B2B2B;
+  --color-darkGrayScale-700: #111111;
+
+  /* Yellow Scale */
+  --color-yellowScale-100: #FFD700;
+  --color-yellowScale-200: #D1B000;
+  --color-yellowScale-300: #A58B00;
+  --color-yellowScale-400: #7B6700;
+  --color-yellowScale-500: #544500;
+  --color-yellowScale-600: #2F2600;
+  --color-yellowScale-700: #161000;
+
+  /* Muted Scale */
+  --color-mutedScale-100: #E0DEDE;
+  --color-mutedScale-200: #BAB6B6;
+  --color-mutedScale-300: #978F8F;
+  --color-mutedScale-400: #746A6A;
+  --color-mutedScale-500: #504848;
+  --color-mutedScale-600: #2E2929;
+  --color-mutedScale-700: #0C0A0A;
+}
+
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
