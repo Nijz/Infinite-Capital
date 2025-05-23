@@ -28,11 +28,11 @@ function Service() {
         <div id="service-section" className='w-full min-h-screen bg-darkGrayScale-700 lg:py-32 py-18 overflow-hidden relative'>
             <div className=" w-11/12 mx-auto flex flex-col items-center ">
                 <_motion.div
-                    className='lg:h-24 lg:w-24 bg-orange-400 absolute rounded-full blur-[100px] left-10'
+                    className='md:h-24 md:w-24 h-12 w-12 bg-orange-400 absolute rounded-full blur-[100px] left-10'
                     animate={{
                         x: [0, 360, 360, 0],
                         y: [90, 270, 270, 90],
-                        scale: [1, 2, 1, 2, 1],
+                        scale: [0, 1, 2, 3, 2, 1, 0],
                     }}
                     transition={{
                         duration: 10,
@@ -88,7 +88,7 @@ function Service() {
                     animate={{
                         x: [0, -360, -360, 0],
                         y: [-90, -270, -270, -90],
-                        scale: [1, 2, 1, 2, 1],
+                        scale: [0, 1, 2, 3, 2, 1, 0],
                     }}
                     transition={{
                         duration: 10,

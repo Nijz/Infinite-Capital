@@ -62,7 +62,7 @@ function InvestmentPlanes() {
                 <_motion.div
                     className='lg:h-24 lg:w-24 bg-pink-400 absolute rounded-full blur-[100px] -left-10'
                     animate={{
-                        scale: [1, 1.2, 1],
+                        scale: [1, 3, 1],
                         rotate: [0, 5, 0],
                     }}
                     transition={{
@@ -74,7 +74,7 @@ function InvestmentPlanes() {
                 <_motion.div
                     className='lg:h-24 lg:w-24 bg-blue-400 absolute rounded-full blur-[100px] -right-10'
                     animate={{
-                        scale: [1, 1.2, 1],
+                        scale: [1, 3, 1],
                         rotate: [0, -5, 0],
                     }}
                     transition={{
