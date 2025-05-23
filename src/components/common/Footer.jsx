@@ -1,9 +1,10 @@
 import React from 'react'
 // Remove Link as we are not doing page navigation
 // import { Link } from 'react-router-dom'
-import { socialLinks } from '../../utils/joinUsData'
+// import { socialLinks } from '../../utils/joinUsData'
 import { contactUsCard } from '../../utils/contactUsData'
 import BullLogo from '../../assets/BullLogo.png'
+import { motion as _motion} from 'framer-motion'
 
 function Footer() {
     // Extract contact info from contactUsCard
@@ -25,7 +26,8 @@ function Footer() {
     ];
 
     return (
-        <footer className="bg-gradient-to-b from-darkGrayScale-700 to-darkGrayScale-600 text-gray-400 py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+        <footer className="bg-darkGrayScale-700 text-gray-300 py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center relative overflow-hidden">
+
             {/* Divider at the top of the footer */}
             <div className="w-full border-t border-gray-700 mb-8"></div>
             <div className="max-w-7xl w-full flex flex-col items-center gap-8">
@@ -60,7 +62,7 @@ function Footer() {
                 </div>
 
                 {/* Bottom Section: Navigation, Social, Copyright */}
-                <div className="mt-8 w-full flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+                <div className="mt-4 w-full flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
                     {/* Navigation */}
                     <div className="text-center md:text-left">
                          <ul className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2">
@@ -79,7 +81,7 @@ function Footer() {
                     </div>
 
                     {/* Social Links */}
-                    <div className="flex justify-center space-x-6">
+                    {/* <div className="flex justify-center space-x-6">
                         {socialLinks.map((social) => (
                             <a
                                 key={social.id}
@@ -88,15 +90,16 @@ function Footer() {
                                 rel="noopener noreferrer"
                                 className="hover:text-orange-500 transition-colors duration-300"
                             >
-                                {/* Using image tags for icons */}
                                 {typeof social.icon === 'string' ? (
                                     <img src={social.icon} alt={social.type} className="w-6 h-6" />
                                 ) : (
-                                     // Assuming imported modules have a default export or similar structure
                                     <img src={social.icon.default || social.icon} alt={social.type} className="w-6 h-6" />
                                 )}
                             </a>
                         ))}
+                    </div> */}
+                    <div className="">
+                        Made by Nijen ❤️
                     </div>
 
                     {/* Copyright */}
@@ -106,9 +109,19 @@ function Footer() {
                 </div>
             </div>
              {/* Made by Nijen */}
-             <div className="mt-8 text-sm text-gray-500 text-center w-full">
-                 Made by Nijen ❤️
-             </div>
+             
+            
+            <_motion.div 
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 2 }}
+                transition={{ 
+                    duration: 5, 
+                    ease: 'easeInOut',
+                    repeat: Infinity,
+                    repeatType: "reverse"
+                }}
+                className='absolute h-4 w-full bottom-2 z-10 rounded-full bg-[#0766f5] blur-[100px]'
+            />
         </footer>
     )
 }

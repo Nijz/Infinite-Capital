@@ -82,8 +82,8 @@ function Contact() {
     }
 
     return (
-        <div id="contact-section" className="min-h-screen flex items-center justify-center bg-darkGrayScale-700 py-6">
-            <div className="w-full max-w-6xl flex flex-col md:flex-row gap-8">
+        <div id="contact-section" className="flex items-center justify-center bg-darkGrayScale-700 min-h-fit w-screen py-28">
+            <div className="flex flex-col md:flex-row gap-8 w-11/12 mx-auto max-w-7xl">
                 {/* Get In Touch Card */}
                 <div className="flex-1 border border-white/10 rounded-[20px] backdrop-blur-[10px] bg-darkGrayScale-700 p-5 md:p-8 shadow-xl flex flex-col justify-between">
                     <div>

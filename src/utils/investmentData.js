@@ -2,7 +2,7 @@ export const headings = [
     {
         id: 1,
         type: "Heading",
-        content: "INVESTMENT PLAN’S",
+        content: "INVESTMENT PLANS",
     },
     {
         id: 2,
@@ -45,7 +45,7 @@ export const telegramCard = [
         type: "Button",
         content: "Subscribe Now",
         action: () => {
-            const message = encodeURIComponent("Hello! I'm interested in enrolling for telegram subscription.");
+            const message = encodeURIComponent("Hello! I'm interested in enrolling for telegram subscription. My Good Name: ");
             const whatsappUrl = `https://wa.me/919484679440?text=${message}`;
             window.open(whatsappUrl, '_blank');
         }
@@ -68,21 +68,9 @@ export const investmentPlanCard = [
         type: "Body",
         content: [
             {
-                id:1, 
-                line: "✅ Minimum Investment: ₹1.5 Lakh"
-            },
-            {
-                id:2, 
-                line: "✅ Lock-in Period: 12 Months"
-            },
-            {
-                id:3, 
-                line: "✅ Monthly Returns: Credited every 30 days"
-            },
-            {
-                id:4, 
-                line: "✅ Fund Handling: Fully managed and diversified across strategies"
-            },
+                id:1,
+                line: "For Investment Scheme... press the below button"
+            }
         ]
     }, 
     {
@@ -90,7 +78,7 @@ export const investmentPlanCard = [
         type: "Button",
         content: "Invest Now",
         action: () => {
-            const message = encodeURIComponent("Hello! I'm want to invest money.");
+            const message = encodeURIComponent("Hello! I want to know about your investment scheme's and what is the prcedure. My Good Name: ");
             const whatsappUrl = `https://wa.me/919484679440?text=${message}`;
             window.open(whatsappUrl, '_blank');
         }

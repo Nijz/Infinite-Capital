@@ -53,7 +53,7 @@ function Service() {
                         return (
                             <_motion.div
                                 key={card.id}
-                                className="backdrop-blur-sm bg-darkGrayScale-700 border-[0.2px] border-white/[0.15] rounded-2xl p-6 flex flex-col h-full drop-shadow-lg"
+                                className="backdrop-blur-sm bg-darkGrayScale-700 border-[0.2px] border-white/[0.15] rounded-2xl p-6 flex flex-col h-full drop-shadow-lg select-none cursor-pointer"
                                 onMouseMove={(e) => handleMouseMove(e, card.id)}
                                 onMouseLeave={() => setHoveredCard(null)}
                                 animate={isHovered ? {

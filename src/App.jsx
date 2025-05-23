@@ -12,7 +12,6 @@ import Team from './pages/Team'
 import JoinUs from './pages/JoinUs'
 import Contact from './pages/Contact'
 import Footer from './components/common/Footer'
-import MarketCards from './pages/MarketCards'
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
       <div className=''>
         <Navbar/>
         <Hero/>
-        {/* <MarketCards/> */}
         <About/>
         <Banner/>
         <Service/>

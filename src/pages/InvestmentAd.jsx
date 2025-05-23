@@ -26,7 +26,7 @@ function InvestmentAd() {
                             offset: ["start start", "end end"]
                         }).scrollYProgress,
                         [0, 2],
-                        [1, 2.2]
+                        [1, 2]
                     )
                 }}
             />
