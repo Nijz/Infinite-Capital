@@ -42,10 +42,10 @@ export const cta = {
     id: 1,
     content: "Interested in a personalized strategy?",
     btnName: "Schedule a Consultation",
-    whatsappNumber: "+919484679440",
+    whatsappNumber: "+916355844895",
     action: () => {
       const message = encodeURIComponent("Hello! I'm interested in scheduling a consultation for financial services.");
-      const whatsappUrl = `https://wa.me/919484679440?text=${message}`;
+      const whatsappUrl = `https://wa.me/916355844895?text=${message}`;
       window.open(whatsappUrl, '_blank');
     }
   };
