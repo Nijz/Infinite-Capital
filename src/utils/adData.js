@@ -21,7 +21,7 @@ export const ad = [
     {
         id: 3,
         heading: "30%",
-        subHeading: "Day Profit",
+        subHeading: "Daily Profit",
         gradientText: "30%"
     }
 ]
